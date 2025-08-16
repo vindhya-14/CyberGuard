@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberGuard: Interactive Security Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cyber-bg': '#0a0a1a',
+              'cyber-surface': '#14142b',
+              'cyber-primary': '#00f5d4',
+              'cyber-secondary': '#9b5de5',
+              'cyber-accent': '#f15bb5',
+              'cyber-error': '#ff4d6d',
+              'cyber-success': '#00bfb2',
+              'cyber-text-primary': '#e0e0e0',
+              'cyber-text-secondary': '#a0a0c0',
+            },
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+              mono: ['"Fira Code"', 'monospace'],
+            },
+            boxShadow: {
+              'glow-primary': '0 0 15px rgba(0, 245, 212, 0.3)',
+              'glow-accent': '0 0 15px rgba(241, 91, 181, 0.4)',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.14.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-cyber-bg text-cyber-text-primary">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
